@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "NodeNext",  // Set module to NodeNext
+    "moduleResolution": "NodeNext",  // Set moduleResolution to NodeNext
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "sanity.config.ts",
+    "env.ts",
+    "sanity/schemaTypes.ts"
+  ],
+  "exclude": ["node_modules"]
+}

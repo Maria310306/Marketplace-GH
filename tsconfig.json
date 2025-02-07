@@ -1,0 +1,68 @@
+// {
+//   "compilerOptions": {
+//     "target": "es5", // Use "es5" for broader compatibility
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "noEmit": true,
+//     "esModuleInterop": true,
+//     "module": "esnext",
+//     "moduleResolution": "node", // Use "node" instead of "bundler"
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "jsx": "preserve",
+//     "incremental": true,
+//     "plugins": [
+//       {
+//         "name": "next"
+//       }
+//     ],
+//     "paths": {
+//       "@/*": ["./*"]
+//     },
+//     "baseUrl": ".", // Add baseUrl to support paths
+//     "forceConsistentCasingInFileNames": true, // Ensure consistent file naming
+//     "noUnusedLocals": true, // Warn about unused variables
+//     "noUnusedParameters": true // Warn about unused function parameters
+//   },
+//   "include": [
+//   "next-env.d.ts",
+//   "**/*.ts",
+//   "**/*.tsx",
+//   ".next/types/**/*.ts",
+//   "node_modules/class-variance-authority/**/*",
+//   "app/**/*.ts",
+//   "app/**/*.tsx"
+// ]
+// ,
+//   "exclude": ["node_modules"],
+//   "typeRoots": ["node_modules/@types", "node_modules/class-variance-authority"]
+// }
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
